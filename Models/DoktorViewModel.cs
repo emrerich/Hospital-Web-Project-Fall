@@ -8,7 +8,6 @@
         public string? DoktorTelefon { get; set; }
         public string? DoktorMail { get; set; }
         public string? DoktorSifre { get; set; }
-
         public string? DoktorUnvan { get; set; }
     }
 }
