@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Hospital_Web_Project_Fall.Controllers
+namespace Hospital_Web_Project_Fall.Controllers;
 
 public class DoktorController
 {
 	public DoktorController()
-	{ }
+	{ 
 
 	}
 }
