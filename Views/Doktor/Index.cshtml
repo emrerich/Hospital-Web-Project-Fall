@@ -1,0 +1,46 @@
+﻿@model List<Hospital_Web_Project_Fall.Models.Domain.Doktor>
+@{
+}
+
+<div class="container">
+    <h1>Doktor Listesi</h1>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover table-responsive">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Doktor Adı</th>
+                    <th scope="col">Doktor Soyadı</th>
+                    <th scope="col">Doktor Telefon</th>
+                    <th scope="col">Doktor Mail</th>
+                    <th scope="col">Doktor Şifre</th>
+                    <th scope="col">Doktor Branş</th>
+                    <th scope="col">Doktor Ünvan</th>
+                    <th scope="col">Doktor Görüntüle</th>
+                    <th scope="col">Doktor Sil</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.DoktorAdi</td>
+                        <td>@item.DoktorSoyadi</td>
+                        <td>@item.DoktorTelefon</td>
+                        <td>@item.DoktorMail</td>
+                        <td>@item.DoktorSifre</td>
+                        <td>@item.DoktorBrans</td>
+                        <td>@item.DoktorUnvan</td>
+<td>
+                            <a class="btn btn-primary btn-sm text-sm" asp-action="View" asp-route-id="@item.DoktorId">Güncelle</a>
+</td>
+                        <td>
+                            <a class="btn btn-danger btn-sm text-sm" asp-action="Delete" asp-route-id="@item.DoktorId">Sil</a>
+                        </td>
+     
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

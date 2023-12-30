@@ -16,3 +16,23 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+table{
+border: 1px solid black;
+border-collapse: collapse;
+width: 100%;
+display: table;
+border-spacing: 2px;
+border-color: grey;
+}
+ 
+th{
+
+text-align: center;
+font-size: 10px;
+}
+td{
+text-align: center;
+font-size: 10px;
+}

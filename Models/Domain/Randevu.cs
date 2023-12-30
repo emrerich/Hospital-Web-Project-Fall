@@ -1,6 +1,6 @@
-﻿namespace Hospital_Web_Project_Fall.Models
+﻿namespace Hospital_Web_Project_Fall.Models.Domain
 {
-    public class RandevuViewModel
+    public class Randevu
     {
         public string? RandevuAdi;
         public string? RandevuTarih;
