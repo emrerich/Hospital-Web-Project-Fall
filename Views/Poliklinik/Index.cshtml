@@ -1,0 +1,20 @@
+﻿@model Hospital_Web_Project_Fall.Models.AddPoliklinikViewModel
+
+<div class="container">
+    <h1>Poliklinik Ekle</h1>
+
+    <form method="post">
+
+        <div class="form-group">
+            <label for="SelectedAnaBilimDaliID">Ana Bilim Dalı:</label>
+            <select class="form-control" id="SelectedAnaBilimDaliID" name="SelectedAnaBilimDaliID" required>
+                @foreach (var anaBilimDali in Model.AnaBilimDallari)
+                {
+                    <option value="@anaBilimDali.AnaBilimDaliID">@anaBilimDali.Ad</option>
+                }
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Ekle</button>
+    </form>
+</div>

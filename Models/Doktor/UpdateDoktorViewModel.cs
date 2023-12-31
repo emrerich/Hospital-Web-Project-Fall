@@ -1,4 +1,4 @@
-﻿namespace Hospital_Web_Project_Fall.Models
+﻿namespace Hospital_Web_Project_Fall.Models.Doktor
 {
     public class UpdateDoktorViewModel
     {

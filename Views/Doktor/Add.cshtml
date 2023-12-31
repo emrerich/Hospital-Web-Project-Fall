@@ -1,4 +1,4 @@
-﻿@model Hospital_Web_Project_Fall.Models.AddDoktorViewModel
+﻿@model AddDoktorViewModel
 @{
 
    
@@ -8,27 +8,27 @@
 <form method="post" action="Add">
     <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Doktor Adı</label>
-        <input type="text" class="form-control" asp-for="DoktorAdi">
+        <input type="text" class="form-control" asp-for="DoktorAdi" readonly>
     </div>
     <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Doktor Soyad</label>
-        <input type="text" class="form-control" asp-for="DoktorSoyadi">
+        <input type="text" class="form-control" asp-for="DoktorSoyadi" readonly>
     </div>
     <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Doktor Telefon</label>
-        <input type="text" class="form-control" asp-for="DoktorTelefon">
+        <input type="text" class="form-control" asp-for="DoktorTelefon" readonly>
     </div>
 
     <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Doktor Mail</label>
-        <input type="email" class="form-control" asp-for="DoktorMail">
+        <input type="email" class="form-control" asp-for="DoktorMail" readonly>
     </div>
     <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Doktor Şifre</label>
-        <input type="password" class="form-control" asp-for="DoktorSifre">
+        <input type="text" class="form-control" asp-for="DoktorSifre" readonly>
     </div>
     <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Doktor Branş</label>
+        <label for="formGroupExampleInput" class="form-label">Doktor Branş </label>
         <input type="text" class="form-control" asp-for="DoktorBrans">
     </div>
     <div class="mb-3">
