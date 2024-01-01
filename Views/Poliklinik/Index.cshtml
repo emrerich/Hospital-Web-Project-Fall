@@ -15,6 +15,20 @@
             </select>
         </div>
 
+        <!-- Eklenen kısım -->
+        <div class="form-group">
+            <label for="SelectedBirdenFazlaPoliklinikIcerenDallar">Birden Fazla Poliklinik İçeren Ana Bilim Dalları:</label>
+            <ul>
+                @foreach (var anaBilimDali in Model.BirdenFazlaPoliklinikIcerenDallar)
+                {
+                    <li>
+                        @anaBilimDali.Ad - @anaBilimDali.Poliklinikler.Count poliklinik
+                    </li>
+                }
+            </ul>
+        </div>
+        <!-- Eklenen kısım sonu -->
+
         <button type="submit" class="btn btn-primary">Ekle</button>
     </form>
 </div>

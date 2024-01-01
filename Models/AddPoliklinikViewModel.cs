@@ -10,5 +10,6 @@ namespace Hospital_Web_Project_Fall.Models
 
         public int SiraNo { get; set; }
         public List<AnaBilimDali> AnaBilimDallari { get; set; }
+        public List<AnaBilimDali> BirdenFazlaPoliklinikIcerenDallar { get; set; }
     }
 }

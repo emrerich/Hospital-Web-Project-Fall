@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hospital_Web_Project_Fall.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231231202546_IdentityTable")]
+    [Migration("20240101104434_IdentityTable")]
     partial class IdentityTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

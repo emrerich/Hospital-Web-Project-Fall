@@ -1,21 +1,11 @@
-﻿{
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:32191",
-      "sslPort": 44332
-    }
-  },
+{
   "profiles": {
     "Hospital_Web_Project_Fall": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
+      "workingDirectory": "D:\\Next.js\\Hospital-Web-Project-Fall",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7147;http://localhost:5038",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7147;http://localhost:5038"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -23,6 +13,14 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:32191",
+      "sslPort": 44332
     }
   }
 }

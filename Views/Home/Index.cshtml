@@ -1,10 +1,37 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Microsoft.AspNetCore.Identity
+@using Hospital_Web_Project_Fall.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Hospital_Web_Project_Fall
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    Layout = "_Layout";
 }
 
+
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Deneme Hastane Sistemi</p>
-   
+
+  <h1 class="display-4">Zengin Hastanesi</h1>
+    @if (User.Identity.IsAuthenticated)
+  {
+      <h1 class="display-4">Admin Paneli</h1>
+        <p class="mb-5"> Hoş Geldiniz @User.Identity.Name </p>
+
+
+<a class="btn btn-primary" href="/Identity/Account/Manage/Index">Profil</a>
+<a class="btn btn-primary" href="/Identity/Account/Logout">Çıkış Yap</a>
+
+        <a class ="btn btn-primary" asp-controller="Poliklinik" asp-action="Index">Poliklinikler</a>
+        <a class="btn btn-primary" asp-controller="Doktor" asp-action="Index">Doktorlar</a>
+        <a class="btn btn-primary" asp-controller="User" asp-action="Index">Kullanıcılar</a>
+
+  }
+  else
+  {
+      <p> Lütfen Giriş Yapınız </p>
+      <a class="btn btn-primary" href="/Identity/Account/Login">Giriş Yap</a>
+      <a class="btn btn-primary" href="/Identity/Account/Register">Kayıt Ol</a>
+  }
 
 </div>
